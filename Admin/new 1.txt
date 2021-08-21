@@ -1,0 +1,41 @@
+<!--ttt-->
+	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+		    <h5 class="modal-title" id="exampleModalLabel"></h5>
+		   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+		  </div>
+		   <div class="modal-body">
+		   <div class="card card-register mx-auto mt-10">
+           <div class="card-header">Edit Profile</div>
+           <div class="card-body">
+		   <form enctype="multipart/form-data" action="pro_insert.php" method="POST">
+		     <label>Enter Email</label>
+		   <input class="form-control" type="text" name="txtEmail">
+		   <label>Enter Application No</label>
+		   <input class="form-control" type="text" name="txtApp">
+		   <label>Enter RollNo</label>
+		   <input class="form-control" type="text" name="txtroll">
+		    <label>Enter Class</label>
+		   <input class="form-control" type="text" name="txtclass">
+		   <label>UploadPhoto</label>
+		    <input class="form-control" type="file" name="txtphoto">
+			<label>UploadSign</label>
+		   <input class="form-control" type="file" name="txtsign">
+		   <input type="hidden" name="txtID" value="<?php echo $r0?>">
+		   <label>UploadTC</label>
+		   <input class="form-control" type="file" name="txtTC">
+           <input type="submit" name="cmd" class="btn btn-primary btn-block">		   
+		   </form>
+		   </div>
+         <!-- <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="Logout.php">Logout</a>
+          </div>-->
+        </div>
+      </div>
+    </div>
+	<!--ttt-->
